@@ -1,0 +1,251 @@
+@import url('/media.css');
+
+@font-face {
+    font-family: 'DM Sans-medium';
+    src: url('./assets/fonts/DM_Sans/static/DMSans-Medium.woff2') format('woff2'),
+         url('./assets/fonts/DM_Sans/static/DMSans-Medium.woff') format('woff'),
+         url('./assets/fonts/DM_Sans/static/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url('./assets/fonts/Poppins/Poppins-Bold.ttf') format('woff2'),
+        url('./assets/fonts/Poppins/Poppins-Bold.ttf') format('woff'),
+        url('./assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('woff2'),
+        url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('woff'),
+        url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-medium';
+    src: url('./assets/fonts/Poppins/Poppins-Medium.ttf') format('woff2'),
+        url('./assets/fonts/Poppins/Poppins-Medium.ttf') format('woff'),
+        url('./assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-light';
+    src: url('./assets/fonts/Poppins/Poppins-Light.ttf') format('woff2'),
+        url('./assets/fonts/Poppins/Poppins-Light.ttf') format('woff'),
+        url('./assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-mixed';
+    src: url('./assets/fonts/Poppins/Poppins-MediumItalic.ttf') format('woff2'),
+        url('./assets/fonts/Poppins/Poppins-MediumItalic.ttf') format('woff'),
+        url('./assets/fonts/Poppins/Poppins-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+:root {
+    --dark-content: #666666;
+    --solid-heading: #42446E;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    margin:0 auto; 
+    max-width: 1240px;
+    background-color: #D9D9D9;
+}
+/* header */
+.header {
+    font-family: 'DM Sans-medium';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.header_navigation {
+    display: block;
+}
+.header_navigation_list {
+    display: flex;
+    list-style: none;
+    margin-left: 200px;
+    font-size: 20px;
+}
+.header_navigation_list li {
+    margin-left: 70px;
+    color: var(--dark-content);
+    transition: 0.5s ease-in-out;
+}
+.header_navigation_list li:hover {
+    color: white;
+}
+.header_links a{
+    margin-left: 20px;
+}
+.menu-burger__header {
+    display: none;
+}
+.header__nav {
+    display: none;
+}
+/* main-common-info */
+.main_title-photo {
+    display: flex;
+    margin: 150px 0px;
+    font-family: 'Poppins-bold';
+    font-size: 58px;
+}
+.main_title-photo_text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.main_title-photo_text p {
+    margin: 0;
+    width: 100%;
+    color: var(--solid-heading);
+}
+.main_title-photo_image{
+    width: 30%;
+}
+.main_title-photo_image img {
+    width: 100%;
+    transition: 1s ease-in;
+}
+.main_title-photo_image img:hover {
+    width: 110%;
+}
+/* main-technologies */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section h2{
+    font-family: 'Poppins-bold';
+    font-size: 48px;
+    color: var(--solid-heading);
+}
+section h3 {
+    font-family: 'Poppins-regular';
+    font-size: 32px;
+    margin: 0;
+    color: var(--dark-content);
+}
+.main_technologies_icons {
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.main_technologies_icons img {
+    width: 11%;
+    margin: 30px;
+    transition: 0.5s ease;
+}
+.main_technologies_icons img:hover {
+    width: 12%;
+}
+/* main-projects */
+.main_projects_blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 60px;
+}
+.main_projects_blocks_item {
+    background-color: white;
+    width: 30%;
+    border-radius: 20px;
+    justify-content: center;
+    transition: 1s ease;
+}
+.main_projects_blocks_item_img {
+    width: 100%;
+}
+.main_projects_blocks_item:hover {
+    border: #42446E 3px solid;
+    background-color: #dbd5d5;
+}
+.main_projects_blocks_item_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.main_projects_blocks_item_text h3 {
+    font-family: 'Poppins-medium';
+    font-size: 28px;
+    color: black;
+}
+.main_projects_blocks_item_text p {
+    font-family: 'Poppins-light';
+    font-size: 18px;
+    color: var(--dark-content);
+}
+.main_projects_blocks_item_links {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins-regular';
+    font-size: 16px;
+    gap: 40px;
+    margin-right: 30px;
+    text-decoration: underline;
+}
+.main_projects_blocks_item_links img {
+    margin-right: 15px;
+}
+/* footer */
+.footer {
+    margin: 100px 0 30px;
+}
+.footer_contacts {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_contacts_links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.footer_contacts_links a {
+    color: var(--dark-content);
+    transition: 1s ease-in-out;
+}
+.footer_contacts_links a:hover {
+    text-decoration: underline;
+}
+.footer_contacts_links_social {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.footer_navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_navigation_links {
+    display: flex;
+    gap: 30px;
+}
+.footer_navigation_links li {
+    list-style: none;
+    color: var(--dark-content);
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+.footer_navigation_links li:hover {
+    color: white;
+}
+.footer_afterword {
+    color: var(--dark-content);
+    font-size: 18px;
+}
